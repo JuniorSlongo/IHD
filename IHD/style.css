@@ -1,0 +1,147 @@
+/* Variáveis para cores e fontes */
+:root {
+    --cor-primaria: #005792;
+    --cor-secundaria: #ffffff;
+    --cor-fundo: #e7eff6;
+    --cor-destaque: #cf9f3e;
+    --cor-erro: #ff1e56;
+    --fonte-primaria: 'Segoe UI', sans-serif;
+    --fonte-secundaria: 'Georgia', serif;
+    --tamanho-fonte-base: 16px;
+    --altura-linha: 1.6;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: var(--fonte-primaria);
+    font-size: var(--tamanho-fonte-base);
+    color: var(--cor-primaria);
+    background-color: var(--cor-fundo);
+    line-height: var(--altura-linha);
+}
+
+/* Container principal para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo e mantém as margens laterais */
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navegação */
+nav {
+    background-color: var(--cor-destaque);
+    color: var(--cor-secundaria);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Conteúdo principal */
+main {
+    margin: 0 120px; /* Adiciona margens laterais de 40px */
+    text-align: center;
+    padding: 40px 0;
+}
+img {
+    padding: 40px 0;
+}
+
+p{
+    font-size: large;
+    text-align: center;
+    padding: px 0;
+    font-weight: 500;
+    color: #2e3336;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px; /* Ajuste conforme necessário */
+    width: 100%; /* Garante que o formulário seja responsivo */
+    margin: auto; /* Centraliza o formulário horizontalmente */
+    font-weight: 500;
+    font-size: large;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-primaria);
+}
+
+button {
+    background-color: var(--cor-destaque);
+    color: var(--cor-secundaria);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: var(--tamanho-fonte-base);
+    margin-top: 10px; /* Espaço acima do botão */
+    align-self: center; /* Alinha o botão ao centro do container flexível */
+}
+
+button:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* Mensagens de erro */
+.error-message {
+    color: var(--cor-erro);
+    font-size: large;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    p{
+        color: white;
+    }
+}

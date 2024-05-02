@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Água Potável - Informações e Análises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Água Potável - Informações e Análises</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#analise">Análise da Água</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="sobre">
+            <h2>Sobre a Água Potável</h2>
+            <p>    Água potável é um recurso vital para a vida humana, e sua qualidade é essencial para a saúde pública. O pH, que mede o grau de acidez ou alcalinidade da água, é um indicador crítico dessa qualidade. Um pH equilibrado na água potável é importante para evitar problemas de saúde e corrosão em tubulações, além de garantir a eficácia de processos como a cloração.
+                Desenvolvemos um site para analisar o pH da água potável porque é uma maneira prática e acessível de permitir que as pessoas verifiquem a qualidade da água que consomem. Com esta ferramenta online, os usuários podem inserir os valores de pH medidos e receber uma avaliação instantânea sobre a condição da água. Isso não apenas aumenta a conscientização sobre a importância da água potável segura, mas também empodera os indivíduos a tomarem medidas proativas para a saúde e bem-estar.
+                
+                O site também serve como uma plataforma educacional, fornecendo informações sobre o significado do pH e como diferentes níveis podem afetar o corpo humano e o meio ambiente. Ao entender que a água com um pH entre 6 e 7 é considerada neutra, enquanto valores acima de 7 indicam alcalinidade, os usuários podem apreciar a importância de manter o equilíbrio adequado2.
+                
+                Além disso, ao promover o uso de água alcalina, que tem sido associada a benefícios para a saúde, como maior energia e proteção contra certas doenças, o site encoraja um estilo de vida mais saudável2. Portanto, a análise do pH é mais do que uma simples medição; é uma ferramenta essencial para a saúde pública e a sustentabilidade ambiental.</p>
+            <img src="oque-e-agua-potavel.jpg" />
+        </section>
+        <section id="analise">
+            <h2>Análise da Qualidade da Água</h2>
+            <p>Entenda os parâmetros que definem a qualidade da água e como ela é tratada para se tornar potável. Aprenda sobre pH, turbidez, presença de minerais e muito mais.</p>
+            <!-- Formulário de análise de água -->
+            <form id="form-analise">
+                <label for="ph">pH da Água:</label>
+                <input type="number" id="ph" name="ph" min="0" max="14" step="0.10" required>
+                <span id="error-ph" class="error-message"></span>
+                <button type="submit">Analisar</button>
+            </form>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Tem perguntas ou sugestões? Entre em contato conosco através do formulário abaixo.</p>
+            <!-- Formulário de contato -->
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Água Potável</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
